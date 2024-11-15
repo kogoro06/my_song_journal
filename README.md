@@ -101,5 +101,4 @@ My Song Journalは、毎日の気分に合わせて曲と一言メモを記録�
 - **API**: Spotify Web API (楽曲データ取得、再生)
 - **ユーザー認証**: Devise + OAuth（Spotify）
 - **デプロイ**: fly.io
-
 ---
