@@ -6,9 +6,11 @@ default: &default
 
 development:
   <<: *default
+  database: myapp_development
 
 test:
   <<: *default
+  database: myapp_test  # テストデータベース名を指定
 
 production:
   primary: &primary_production
