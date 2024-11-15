@@ -1,9 +1,10 @@
-mkdir -p .github/workflows
-echo "name: Fly Deploy
+name: Fly Deploy
+
 on:
   push:
     branches:
       - main
+
 jobs:
   deploy:
     name: Deploy app
@@ -13,4 +14,4 @@ jobs:
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
         env:
-          FLY_API_TOKEN: \${{ secrets.FLY_API_TOKEN }}" > .github/workflows/fly.yml
+          FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
